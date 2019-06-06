@@ -1,0 +1,2 @@
+<!-- components/child.wxml -->
+<view class="inner">{{innerText}}</view>

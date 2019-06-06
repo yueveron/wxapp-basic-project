@@ -1,0 +1,13 @@
+<view class="container">
+  <view>
+    <button type="default" bindtap="onClkAddPhoto">本地图片</button>
+    <button type="default" bindtap="onClkCapture">拍照</button>
+  </view>
+  <view class="list-images">
+    <block wx:for="{{listImagePaths}}" wx:key="*this">
+      <view class="image-wrap">
+        <image src="{{item}}" mode="aspectFill" data-idx="{{index}}"></image>
+      </view>
+    </block>
+  </view>
+</view>
